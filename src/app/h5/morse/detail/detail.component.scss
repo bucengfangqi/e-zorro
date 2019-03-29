@@ -1,0 +1,19 @@
+:host{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: url(assets/blueprint.png);
+    .card{
+        background: rgb(182,194,154);
+        color: #FFF;
+        .card-title{
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 64px;
+            margin: 0;
+            background: rgb(138,151,123);
+        }
+    }
+}

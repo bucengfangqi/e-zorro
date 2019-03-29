@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test1.component.scss']
 })
 export class Test1Component implements OnInit {
-
+  word:string="";
+  morse:string="";
   constructor() { }
 
   ngOnInit() {

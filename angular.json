@@ -34,7 +34,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/morsey/dist/index.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -90,7 +92,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/morsey/dist/index.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
