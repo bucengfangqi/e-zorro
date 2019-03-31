@@ -1,0 +1,22 @@
+<div class="circle-group">
+  <div class="circle big-cicle">
+    <div class="area" [ngStyle]="{height: range+'%'}"></div>
+    <div class="area-desc">
+      <div [class.text-white]="range>81">海南昌江</div>
+      <div [class.text-white]="range>40">{{range}}%</div>
+    </div>
+  </div>
+  
+  <div class="circle small-cicle">
+    <div class="area" [ngStyle]="{height: range+'%'}"></div>
+    <div class="area-desc">
+      <div [class.text-white]="range>81">海南昌江</div>
+      <div [class.text-white]="range>40">{{range}}%</div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <label for="range">请拖动</label>
+  <input type="range" class="custom-range" id="range" name="range" [(ngModel)]="range">
+</div>
