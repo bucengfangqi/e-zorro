@@ -1,4 +1,4 @@
-# H5单管理
+# 用于H5单页面的管理
 
 基于[Angular CLI](https://github.com/angular/angular-cli) 版本号 7.2.2 [demo](https://bucengfangqi.github.io/e-zorro/)
 ## 项目使用
