@@ -1,6 +1,6 @@
 # 用于H5单页面的管理
 
-基于[Angular CLI](https://github.com/angular/angular-cli) 版本号 7.2.2 [demo](https://bucengfangqi.github.io/e-zorro/)
+基于[Angular CLI](https://github.com/angular/angular-cli) 版本号 7.2.2 在线 [demo](https://bucengfangqi.github.io/e-zorro/)
 ## 项目使用
 
 1. 安装git，在需要使用的磁盘目录下右键 `Git Bash Here`  
@@ -11,7 +11,7 @@
 
 
 
-
+![百度](./src/assets/me_pic.jpg)
 ```javascript
 //life motto
 if(sad()===true){
@@ -19,8 +19,7 @@ if(sad()===true){
   beAwesome();
 }
 ```
-## 图片测试
-![百度]("https://www.baidu.com/img/bd_logo1.png")
+
 ## 表格
 First Header | Second Header
 ------------ | -------------
