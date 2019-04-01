@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'test2',
     loadChildren: './h5/test2/test2.module#Test2Module',
   },
+  {
+    path: 'navbar',
+    loadChildren: './h5/navbar/navbar.module#NavbarModule',
+  },
 
   { path: '', redirectTo: '/page', pathMatch: 'full' },
   { path: '**', component: PageComponent }

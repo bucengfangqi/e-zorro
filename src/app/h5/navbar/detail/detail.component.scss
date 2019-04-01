@@ -1,0 +1,16 @@
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input{
+        background: transparent;
+        color: #FFF;
+        border: none;
+        border-bottom: 2px solid #FFF; 
+        outline: none;
+        text-align: center;
+    }
+}
