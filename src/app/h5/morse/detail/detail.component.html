@@ -21,8 +21,8 @@
           name="morse"></textarea>
       </div>
       <p *ngIf="morse" [@openClose]="morse?'open':''">
-        <button type="button" class="btn btn-secondary animated bounceIn" ngxClipboard [cbContent]="morse|dmorse">复制</button>
-        &nbsp;<span>{{morse|dmorse}}</span>
+        <button type="button" class="btn btn-secondary animated bounceIn" ngxClipboard [cbContent]="morse|dmorse|lowercase ">复制</button>
+        &nbsp;<span>{{morse|dmorse|lowercase }}</span>
       </p>
     </div>
   </div>
