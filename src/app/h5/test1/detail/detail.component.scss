@@ -1,0 +1,48 @@
+.circle-group{
+    display: flex;
+    justify-content: center;
+    .circle{
+        position: relative;
+        overflow: hidden;
+        .area{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: auto;
+        }
+        .area-desc{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            div{
+                height: 50%; 
+                line-height: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:last-child{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+.big-cicle{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    border: 2px solid blueviolet;
+    .area{
+        background: #6a6591;
+    }
+}
+.small-cicle{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 2px solid #000;
+    .area{
+        background: blueviolet;
+    }
+}
+

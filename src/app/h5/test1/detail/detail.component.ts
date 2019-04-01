@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 @Component({
-  selector: 'app-test2',
-  templateUrl: './test2.component.html',
-  styleUrls: ['./test2.component.scss']
+  selector: 'app-detail',
+  templateUrl: './detail.component.html',
+  styleUrls: ['./detail.component.scss']
 })
-export class Test2Component implements OnInit {
+export class DetailComponent implements OnInit {
   range:number=49;
   constructor(
     private titleService: Title
   ) { }
 
   ngOnInit() {
-    this.titleService.setTitle("flexBox瀑布流");
+    this.titleService.setTitle("div-charts");
 
   }
 }
