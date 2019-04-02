@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { title_h5 } from '@_shared/title_h5'
 @Component({
   selector: 'app-test2',
   templateUrl: './test2.component.html',
@@ -12,7 +13,7 @@ export class Test2Component implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.titleService.setTitle("flexBox瀑布流");
+    this.titleService.setTitle(title_h5[2].title);
 
   }
 }

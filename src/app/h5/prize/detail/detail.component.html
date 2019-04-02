@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <div *ngFor="let item of prizeList;let i=index" [class.hignLight]="item===run_sequence[index]" (click)="run(item)" [class.no-border]="item==='开始'">
+    <button *ngIf="item==='开始'" class="btn btn-primary">{{item}}</button>
+    <span *ngIf="item!=='开始'">{{item}}</span>
+    
+  </div>
+</div>
+<input type="number" [(ngModel)]="prizeNum">

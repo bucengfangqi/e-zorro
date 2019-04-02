@@ -12,6 +12,9 @@
     "paths": {
       "@e_zorro": [
         "./app/_shared/shared.module"
+      ],
+      "@_shared/*": [
+        "./app/_shared/*"
       ]
     },
     "importHelpers": true,

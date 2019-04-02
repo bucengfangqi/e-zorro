@@ -1,16 +1,7 @@
 <nav>
   <ul>
-    <li>
-      <a [routerLink]="['/morse']">摩尔斯代码编译and反编译</a>
-    </li>
-    <li>
-      <a [routerLink]="['/test1']">div-charts</a>
-    </li>
-    <li>
-      <a [routerLink]="['/test2']">flexBox瀑布流</a>
-    </li>
-    <li>
-      <a [routerLink]="['/navbar']">BootStrap折叠式导航栏示例</a>
+    <li *ngFor="let item of title_h5">
+      <a [routerLink]="[item.link]">{{item.title}}</a>
     </li>
   </ul>
 </nav>

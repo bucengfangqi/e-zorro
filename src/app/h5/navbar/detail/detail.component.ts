@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import GeoPattern from 'geopattern'
+import { title_h5 } from '@_shared/title_h5'
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
@@ -14,7 +15,7 @@ export class DetailComponent implements OnInit {
   pattern;
   initstr="随便写点啥......";
   ngOnInit() {
-    this.titleService.setTitle("花里胡哨的背景");
+    this.titleService.setTitle(title_h5[3].title);
     this.getBg(this.initstr)
   }
   getBg(str){

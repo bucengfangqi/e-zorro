@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { trigger, transition, useAnimation,animate } from '@angular/animations';
 import { slideInLeft,slideOutRight } from 'ng-animate';
-
+import { title_h5 } from '@_shared/title_h5'
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
@@ -27,6 +27,6 @@ export class DetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.titleService.setTitle("摩尔斯代码编译and反编译");
+    this.titleService.setTitle(title_h5[0].title);
   }
 }

@@ -18,6 +18,14 @@ const routes: Routes = [
     path: 'navbar',
     loadChildren: './h5/navbar/navbar.module#NavbarModule',
   },
+  {
+    path: 'prize',
+    loadChildren: './h5/prize/prize.module#PrizeModule',
+  },
+  {
+    path: 'hz-md',
+    loadChildren: './h5/hz-md/hz-md.module#HzMdModule',
+  },
 
   { path: '', redirectTo: '/page', pathMatch: 'full' },
   { path: '**', component: PageComponent }
