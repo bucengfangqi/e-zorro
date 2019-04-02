@@ -24,7 +24,7 @@ export class DetailComponent implements OnInit {
     if (content === '开始' && this.runAble) {
       this.runAble = false;
 
-      this.timer = interval(this.timing).pipe(take(num || ((this.prizeNum ? this.prizeNum : 1) + 38 - (this.index + 1))));
+      this.timer = interval(this.timing).pipe(take(num || ((this.prizeNum ? this.prizeNum : Math.round(Math.random()*7+1)) + 38 - (this.index + 1))));
       this.timer.subscribe({
         next: value => {
           //如果数据下标等于run_sequence的长度
