@@ -70,6 +70,7 @@ export class DetailComponent implements OnInit {
   getEndTime(){
     if(this.getPureTime()>=this.getPureTime(this.endTime)){
       this.since=countdown(this.getPureTime(),this.getPureTime(), countdown.DEFAULTS);
+      this.since=undefined;
       this.runAble=false;
     }else{
       this.since=countdown(null,this.getPureTime(this.endTime), countdown.DEFAULTS);
