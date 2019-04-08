@@ -3,6 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { title_h5 } from '@_shared/title_h5'
 import { interval } from 'rxjs';
 import { take, } from 'rxjs/operators';
+declare var countdown:any;
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
@@ -17,7 +18,8 @@ export class DetailComponent implements OnInit {
   
   runAble = true;//按钮是否可点击
   timing = 50;//奖品跳转间隔
-  timer
+  timer;//定时器
+  timerSecond;//定时器
 
 
   run(content, num?) {
@@ -53,9 +55,32 @@ export class DetailComponent implements OnInit {
     private titleService: Title
   ) { }
 
+  endTime="2019-06-01 23:59:59";//Date.parse(new Date("2019-10-01 23:59:59"))时间戳
+  since
   ngOnInit() {
     this.titleService.setTitle(title_h5[4].title);
-
+    this.getEndTime();
+    this.timerSecond=interval(1000).subscribe({
+      next: value => {
+        this.getEndTime();
+      },
+    })
+    
   }
-
+  getEndTime(){
+    if(this.getPureTime()>=this.getPureTime(this.endTime)){
+      this.since=countdown(this.getPureTime(),this.getPureTime(), countdown.DEFAULTS);
+      this.runAble=false;
+    }else{
+      this.since=countdown(null,this.getPureTime(this.endTime), countdown.DEFAULTS);
+    }
+    
+  }
+  getPureTime(time?){
+    if(time){
+      return  Date.parse(""+new Date(time));
+    }else{
+      return  Date.parse(""+new Date());
+    }
+  }
 }
