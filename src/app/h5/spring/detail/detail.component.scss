@@ -1,20 +1,24 @@
 .slide-show{
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   top: 0;
   line-height: 8.8vw;
   color: #B4ADE0;
   font-size: 3.2vw;
   display: flex;
   justify-content: space-between;
+  background: rgb(34,33,42);
   marquee{
     margin-right: 1.33vw;
   }
   .view-records{
     line-height: 8.8vw;
-    overflow: hidden;
-    img{
-      width: 22.67vw;
-    }
+    height: 8.8vw;
+    width: 25.33vw;
+    background: url(/assets/view-records.png) no-repeat;
+    background-size: auto 5.6vw;
+    background-position: 0 1.33vw;
+    
   }
 }
 
@@ -26,7 +30,7 @@
     position: absolute;
     width: 85%;
     left: 7.5%;
-    top: 89.6vw;
+    top: 90vw;
     .chance{
       text-align: center;
       span{
