@@ -12,9 +12,9 @@ declare var countdown:any;
 export class DetailComponent implements OnInit {
   prizeNum;
 
-  prizeList = ['①王老吉', '②红牛', '③加多宝', '⑧冰红茶', '开始', '④脉动', '⑦旺仔', '⑥白开水', '⑤二锅头',];
+  prizeList = ['p-mate.png', 'p-2-￥500.png', 'p-10000-1.png', 'p-8-￥500.png', '开始', 'p-4-￥500.png', 'p-gold.png', 'p-6-￥500.png', 'p-10000-2.png'];
   index = 1;//默认的奖品下标
-  run_sequence = ['①王老吉', '②红牛', '③加多宝', '④脉动','⑤二锅头', '⑥白开水', '⑦旺仔', '⑧冰红茶',];
+  run_sequence = ['p-mate.png', 'p-2-￥500.png', 'p-10000-1.png', 'p-4-￥500.png','p-10000-2.png', 'p-6-￥500.png', 'p-gold.png', 'p-8-￥500.png'];
   
   runAble = true;//按钮是否可点击
   timing = 50;//奖品跳转间隔
@@ -55,10 +55,10 @@ export class DetailComponent implements OnInit {
     private titleService: Title
   ) { }
 
-  endTime="2019-06-01 23:59:59";//Date.parse(new Date("2019-10-01 23:59:59"))时间戳
+  endTime="2019-05-11 23:59:59";//Date.parse(new Date("2019-10-01 23:59:59"))时间戳
   since
   ngOnInit() {
-    this.titleService.setTitle(title_h5[4].title);
+    this.titleService.setTitle(title_h5[6].title);
     this.getEndTime();
     this.timerSecond=interval(250).subscribe({
       next: value => {

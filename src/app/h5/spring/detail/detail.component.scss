@@ -1,0 +1,103 @@
+.slide-show{
+  position: absolute;
+  top: 0;
+  line-height: 8.8vw;
+  color: #B4ADE0;
+  font-size: 3.2vw;
+  display: flex;
+  justify-content: space-between;
+  marquee{
+    margin-right: 1.33vw;
+  }
+  .view-records{
+    line-height: 8.8vw;
+    overflow: hidden;
+    img{
+      width: 22.67vw;
+    }
+  }
+}
+
+
+.prize{
+    max-width: 100vw;
+    margin: 0 auto;
+    font-size: 4.27vw;
+    position: absolute;
+    width: 85%;
+    left: 7.5%;
+    top: 89.6vw;
+    .chance{
+      text-align: center;
+      span{
+        color: #FFF;
+        margin-left: -6.67vw;
+      }
+    }
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 18.67vw;
+      line-height: 12vw;
+      text-align: center;
+      border-collapse: collapse;
+      padding: 2.67vw;
+      grid-column-gap: 3.73vw;
+      grid-row-gap: 2.13vw;
+        div{
+            position: relative;
+            box-shadow: 0 0.53vw 1.07vw 0 #EFE0C1;
+            border-radius: 1.33vw;
+            button{
+                position: absolute;
+                background-image: linear-gradient(to bottom,#FF763D,#FF3F39   );
+                border: none;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                font-size: 3.73vw;
+            }
+            img{
+              position: absolute;
+              left: 0;
+              top: 0;
+            }
+        }
+      }
+      .hignLight{
+          border: 0.53vw solid #C8AC75 !important;
+      }
+      .no-border{
+        border: none !important;
+      }
+      .form-group{
+          padding: 4vw;
+      }
+      .count-down{
+        color: #FFF;
+        margin: 27.2vw 0 18.13vw 31.2vw;
+        font-size: 3.47vw;
+        span{
+          display: inline-block;
+          text-align: center;
+          width: 4.8vw;
+          margin-left: 6.4vw;
+        }
+      }
+      .finish{
+        width: 48.27vw;
+        height: 10.67vw;
+        border-radius: 13.33vw;
+        background-image: linear-gradient(to bottom,#FF783C, #FE3A39  );
+        font-size: 4.27vw;
+        color: #FFF;
+        box-shadow: 0 0.53vw 1.33vw 0 rgba(254, 58, 57, 0.7);
+        transition-duration: 0s;
+        &:active{
+          box-shadow: none;
+          background: #d42726;
+          color: #e3d4d4;
+          
+        }
+      }
+}

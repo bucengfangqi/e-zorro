@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'hz-md',
     loadChildren: './h5/hz-md/hz-md.module#HzMdModule',
   },
+  {
+    path: 'spring',
+    loadChildren: './h5/spring/spring.module#SpringModule',
+  },
 
   { path: '', redirectTo: '/page', pathMatch: 'full' },
   { path: '**', component: PageComponent }

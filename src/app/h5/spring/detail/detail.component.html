@@ -1,0 +1,45 @@
+<img src="assets/spring-1.png" alt="spring-1-bg" width="100%">
+<img src="assets/spring-2.png" alt="spring-2-bg" width="100%">
+<div class="slide-show">
+  <marquee>
+    <span>用户134****3223刚刚获得了500元话费&nbsp;&nbsp;&nbsp;</span>
+    <span>用户150****2074刚刚获得了100元话费&nbsp;&nbsp;&nbsp;</span>
+    <span>用户134****3223刚刚获得了500元话费&nbsp;&nbsp;&nbsp;</span>
+    <span>用户150****2074刚刚获得了100元话费&nbsp;&nbsp;&nbsp;</span>
+  </marquee>
+  <a [routerLink]="['/']" routerLinkActive="router-link-active"  class="view-records">
+    <img src="assets/view-records.png">
+  </a>
+</div>
+<div class="prize">
+  <div class="chance">
+    <span>10</span>
+  </div>
+  <div class="wrapper">
+    <div *ngFor="let item of prizeList;let i=index" [class.hignLight]="item===run_sequence[index]" (click)="run(item)"
+      [class.no-border]="item==='开始'">
+      <button *ngIf="item==='开始'" class="btn btn-primary" [disabled]="!runAble||isEnd">立即<br>抽奖</button>
+      <img *ngIf="item!=='开始'" [src]="'assets/'+item" width="100%" height="100%">
+    </div>
+  </div>
+  <div class="form-group" *ngIf="false">
+    <label for="exampleInputEmail1">输入序号，可以指定喝啥</label>
+    <input [(ngModel)]="prizeNum" type="number" class="form-control" placeholder="输入序号，或者直接随机抽取">
+  </div>
+  <div class="form-group" *ngIf="false">
+    <label for="exampleInputEmail1">结束时间：</label>
+    <input [(ngModel)]="endTime" class="form-control" placeholder="yyyy-mm-dd">
+    <br>
+    <label>距离活动结束还有</label>
+  </div>
+
+  <p class="count-down">
+    <span>{{since.days}}</span>
+    <span>{{since.hours}}</span>
+    <span>{{since.minutes}}</span>
+    <span>{{since.seconds}}</span>
+  </p>
+  <div class="text-center">
+      <button class="btn btn-default finish">立即完成</button>
+  </div>
+</div>
