@@ -2,13 +2,40 @@
   <div class="wrapper">
     <div *ngFor="let item of prizeList;let i=index" [class.hignLight]="item===run_sequence[index]" (click)="run(item)"
       [class.no-border]="item==='开始'">
-      <button *ngIf="item==='开始'" class="btn btn-primary">{{item}}</button>
+      <button *ngIf="item==='开始'" class="btn btn-primary" [disabled]="!runAble">{{item}}</button>
       <span *ngIf="item!=='开始'">{{item}}</span>
+
     </div>
   </div>
-  
   <div class="form-group">
     <label for="exampleInputEmail1">输入序号，可以指定喝啥</label>
     <input [(ngModel)]="prizeNum" type="number" class="form-control" placeholder="输入序号，或者直接随机抽取">
   </div>
+  <div class="form-group" *ngIf="since">
+    <label for="exampleInputEmail1">结束时间：</label>
+    <input [(ngModel)]="endTime" class="form-control" placeholder="yyyy-mm-dd">
+    <br>
+    <label>距离活动结束还有</label>
+    <p class="count-down">
+      <span *ngIf="since.months">
+        <span>{{since.months}}</span> 个月
+      </span>
+      <span *ngIf="since.days">
+        <span>{{since.days}}</span> 天
+      </span>
+      <span *ngIf="since.hours">
+        <span>{{since.hours}}</span> 小时
+      </span>
+      <span *ngIf="since.minutes">
+        <span>{{since.minutes}}</span> 分
+      </span>
+      <span *ngIf="since.seconds">
+        <span>{{since.seconds}}</span> 秒
+      </span>
+      <span *ngIf="!since" class="text-danger">
+        活动已经结束
+      </span>
+    </p>
+  </div>
+  <p class="text-right">for Da金子</p>
 </div>

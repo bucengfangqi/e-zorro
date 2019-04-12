@@ -37,7 +37,8 @@
               "src/assets/css/bootstrap.4.3.1.min.css"
             ],
             "scripts": [
-              "node_modules/morsey/dist/index.js"
+              "node_modules/morsey/dist/index.js",
+              "node_modules/countdown/countdown.js"
             ]
           },
           "configurations": {
@@ -97,7 +98,8 @@
               "src/assets/css/bootstrap.4.3.1.min.css"
             ],
             "scripts": [
-              "node_modules/morsey/dist/index.js"
+              "node_modules/morsey/dist/index.js",
+              "node_modules/countdown/countdown.js"
             ],
             "assets": [
               "src/favicon.ico",
