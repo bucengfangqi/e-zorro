@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'spring',
     loadChildren: './h5/spring/spring.module#SpringModule',
   },
+  {
+    path: 'picture',
+    loadChildren: './h5/picture/picture.module#PictureModule',
+  },
 
   { path: '', redirectTo: '/page', pathMatch: 'full' },
   { path: '**', component: PageComponent }

@@ -1,0 +1,10 @@
+<div class="masonry">
+    <div class="item" *ngFor="let item of imagesList;let i=index">
+      <div class="item__content">
+        <div class="index">{{i+1}}</div>
+        <a [href]="item" target="_blank">
+            <img [src]="item" width="100%">
+        </a>
+      </div>
+    </div>
+  </div>
