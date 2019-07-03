@@ -1,0 +1,102 @@
+$baseSeze: 200px;
+.clock {
+    position: relative;
+    margin: 0 auto;
+    width: $baseSeze;
+    height: $baseSeze;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(90deg);
+    border-radius: $baseSeze/2;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8) inset, 0 0 0 12px #bbb, 0 0 32px 13px rgba(0, 0, 0, 0.7);
+    // .linear-run{
+    //   transition-duration: 1s;
+    //   transition-timing-function: linear;
+
+    // }
+    .pointer {
+        position: absolute;
+
+        .content {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+        }
+    }
+    .ss {
+        width: 90%;
+        height: 2px;
+        top: calc(50% - 2px / 2);
+        left: calc(50% - 45%);
+
+        .content {
+            border: 1px solid #444;
+        }
+    }
+    .mm {
+        width: 70%;
+        height: 4px;
+        top: calc(50% - 4px / 2);
+        left: calc(50% - 35%);
+
+        .content {
+            border: 1px solid #222;
+        }
+    }
+    .hh {
+        width: 40%;
+        height: 8px;
+        top: calc(50% - 8px / 2);
+        left: calc(50% - 20%);
+
+        .content {
+            background: rgba(0, 0, 0, 1);
+        }
+    }
+    .sign {
+        position: absolute;
+        width: 90%;
+        top: calc(50% - 1px);
+        left: 5%;
+        height: 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sign-0-6 {
+        div {
+            transform: rotate(-90deg);
+        }
+    }
+    .sign-1-7 {
+        transform: rotate(30deg);
+        div {
+            transform: rotate(-120deg);
+        }
+    }
+    .sign-2-8 {
+        transform: rotate(60deg);
+        div {
+            transform: rotate(-150deg);
+        }
+    }
+    .sign-3-9 {
+        transform: rotate(90deg);
+        div {
+            transform: rotate(-180deg);
+        }
+    }
+    .sign-4-10 {
+        transform: rotate(120deg);
+        div {
+            transform: rotate(-210deg);
+        }
+    }
+    .sign-5-11 {
+        transform: rotate(150deg);
+        div {
+            transform: rotate(-240deg);
+        }
+    }
+}

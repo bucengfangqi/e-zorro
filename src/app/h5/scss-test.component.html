@@ -1,0 +1,40 @@
+<a [routerLink]="['/login']">login</a><br>
+<a [routerLink]="['/animal']">animal</a>
+
+<div class="clock">
+  <div class="hh pointer" [ngStyle]="{'transform': 'rotate('+30*hh+'deg)'}">
+    <div class="content"></div>
+  </div>
+  <div class="mm pointer" [ngStyle]="{'transform': 'rotate('+6*mm+'deg)'}">
+    <div class="content"></div>
+  </div>
+  <div class="ss pointer" [ngStyle]="{'transform': 'rotate('+6*ss+'deg)'}" [class.linear-run]="ss">
+    <div class="content"></div>
+  </div>
+
+  <div class="sign sign-0-6">
+    <div>12</div>
+    <div>6</div>
+  </div>
+  <div class="sign sign-1-7">
+    <div>1</div>
+    <div>7</div>
+  </div>
+  <div class="sign sign-2-8">
+    <div>2</div>
+    <div>8</div>
+  </div>
+  <div class="sign sign-3-9">
+    <div>3</div>
+    <div>9</div>
+  </div>
+  <div class="sign sign-4-10">
+    <div>4</div>
+    <div>10</div>
+  </div>
+  <div class="sign sign-5-11">
+    <div>5</div>
+    <div>11</div>
+  </div>
+
+</div>
